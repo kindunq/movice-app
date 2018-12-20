@@ -7,33 +7,11 @@ class App extends Component {
 
   // Render : componentWillMount() -> render() -> componentDidMount()
   // Update : componentWillReceiveProps() -> shouldComponentUpdate()-> componentWillUpdate() -> render() -> componentDidUpdate()
-  state = {
-    
-  }
+
+  state = {}
 
   componentDidMount(){
-    setTimeout(() => {
-      this.setState({
-        movies:[
-          {
-            title:'Matrix',
-            poster:'https://cdn3-www.comingsoon.net/assets/uploads/2018/03/dee4528e57d45839b54d53d0ea27c010.jpg',
-          },
-          {
-            title:'Full Metal Jaket',
-            poster:'https://cinema.cornell.edu/Fall2018/images/full-metal-jacket.jpg',
-          },
-          {
-            title:'Oldboy',
-            poster:'https://i.kinja-img.com/gawker-media/image/upload/s--lGW5m0gy--/c_scale,f_auto,fl_progressive,q_80,w_800/i2eoqko3y4azntzc6fon.jpg',
-          },
-          {
-            title:'Star Wars',
-            poster:'https://cdn3.movieweb.com/i/article/IwOYVaoJz2xThk854h3ybec9UYm9xt/798:50/Star-Wars-9-Rumor-Darth-Vader-Return.jpg',
-          },
-        ]
-      })
-    }, 2000)
+    console.log(fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating'))
   }
 
   _renderMovies = () => {
