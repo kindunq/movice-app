@@ -22,6 +22,7 @@ class App extends Component {
         key={movie.id} 
         genres={movie.genres} 
         synopsis={movie.synopsis}
+        torrents={movie.torrents}
       />
     })
     return movies

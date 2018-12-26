@@ -6,7 +6,6 @@ class Movie extends Component{
     static propTypes = {
         title: propTypes.string.isRequired,
         poster: propTypes.string.isRequired,
-        genres: propTypes.string.isRequired,
         synopsis: propTypes.string.isRequired
     }
     render(){
@@ -20,6 +19,12 @@ class Movie extends Component{
                     <div className="Movie__Genres">
                          {this.props.genres.map ((genre, index) => <MovieGenres genres={genre} key={index} /> )}
                     </div>
+                    <p className="Movie__Synopsis">
+                       <span>{this.props.synopsis}</span>
+                    </p>
+                    <ul className="Movie__torrents">
+                     {this.props.torrents.map ((torrents, index) => <Torrents torrents={torrents.url} key={index} index={index} /> )}
+                    </ul>
                 </div>
                 
             </div>
@@ -28,10 +33,22 @@ class Movie extends Component{
 }
 
 
+class Torrents extends Component{
+    render(){
+
+        return(
+            <li><a className="Movie__torrents__Link" href={this.props.torrents}>Link {this.props.index+1} </a> </li>
+        )
+    }    
+}
+
 class MovieGenres extends Component{
+    static propTypes = {
+        genres: propTypes.string.isRequired
+    }
     render(){
         return(
-            <span className="Movie__Genres">{this.props.genres}</span>
+            <span className="Movie__Genres">{this.props.genres}  </span>
         )
     }    
 }
@@ -40,13 +57,11 @@ class MovieGenres extends Component{
 class MoviePoster extends Component {
     static propTypes = {
         title: propTypes.string.isRequired,
-        poster: propTypes.string.isRequired,
-        genres: propTypes.string.isRequired,
-        synnopsis: propTypes.string.isRequired
+        poster: propTypes.string.isRequired
     }
     render(){
         return(
-            <img src={this.props.poster} alt={this.props.title} />
+            <img src={this.props.poster} alt={this.props.title} title={this.props.title} className="Movie_Poster" />
         )
     }    
 }
