@@ -12,7 +12,7 @@ class Movie extends Component{
     render(){
        return(
            <div className="Movie">
-                <div className="Movie__Column">
+                <div className="Movie__Column Movie_poster_wrap">
                     <MoviePoster poster={this.props.poster} title={this.props.title}/>
                 </div>
                 <div className="Movie__Column">
@@ -21,7 +21,7 @@ class Movie extends Component{
                     <div className="Movie__Genres">
                          {this.props.genres.map ((genre, index) => <MovieGenres genres={genre} key={index} /> )}
                     </div>
-                    <p className="Movie__Synopsis">
+                    <div className="Movie__Synopsis">
                        <LinesEllipsis
                         text={this.props.synopsis}
                         maxLine='3'
@@ -29,7 +29,10 @@ class Movie extends Component{
                         trimRight
                         basedOn='letters'
                         />   
-                    </p>
+                    </div>
+                    <div className="Movie__torrents__title">
+                        Torrent Download link
+                    </div>
                     <ul className="Movie__torrents">
                      {this.props.torrents.map ((torrents, index) => <Torrents torrents={torrents.url} key={index} index={index} /> )}
                     </ul>
@@ -45,7 +48,7 @@ class Torrents extends Component{
     render(){
 
         return(
-            <li><a className="Movie__torrents__Link" href={this.props.torrents}>Link {this.props.index+1} </a> </li>
+            <li><a className="Movie__torrents__Link" href={this.props.torrents}>Link{this.props.index+1} </a> </li>
         )
     }    
 }
