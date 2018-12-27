@@ -51,7 +51,7 @@
 }
 
 .Movie__torrents  {list-style:none;margin:0; padding:0;display:flex}
-.Movie__torrents__title {margin:20px 0 5px}
+.Movie__torrents__title {margin:30px 0 5px}
 .Movie__torrents li {list-style:none;margin:0; padding:0;margin-right:20px;}
 .Movie__torrents a {text-decoration: none;color:#B4B5BD}
 
