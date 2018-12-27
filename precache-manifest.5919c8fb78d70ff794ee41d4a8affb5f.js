@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/movice-app/static/js/runtime~main.d0a92258.js"
   },
   {
-    "revision": "cf423ed6f9a6526adaca",
-    "url": "/movice-app/static/js/main.cf423ed6.chunk.js"
+    "revision": "3a1ccbff8960532088eb",
+    "url": "/movice-app/static/js/main.3a1ccbff.chunk.js"
   },
   {
     "revision": "bdbcfc72cb0207b3867a",
     "url": "/movice-app/static/js/1.bdbcfc72.chunk.js"
   },
   {
-    "revision": "cf423ed6f9a6526adaca",
-    "url": "/movice-app/static/css/main.822d29fc.chunk.css"
+    "revision": "3a1ccbff8960532088eb",
+    "url": "/movice-app/static/css/main.2108a130.chunk.css"
   },
   {
-    "revision": "f57e10cd3d646ca65a8afffd95e7d8d9",
+    "revision": "a122b300d7dcee2aff3ead78ada8597c",
     "url": "/movice-app/index.html"
   }
 ];
