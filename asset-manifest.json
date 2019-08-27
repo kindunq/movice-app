@@ -1,13 +1,13 @@
 {
-  "main.css": "/movice-app/static/css/main.2108a130.chunk.css",
-  "main.js": "/movice-app/static/js/main.3a1ccbff.chunk.js",
-  "main.js.map": "/movice-app/static/js/main.3a1ccbff.chunk.js.map",
-  "static/js/1.bdbcfc72.chunk.js": "/movice-app/static/js/1.bdbcfc72.chunk.js",
-  "static/js/1.bdbcfc72.chunk.js.map": "/movice-app/static/js/1.bdbcfc72.chunk.js.map",
+  "main.css": "/movice-app/static/css/main.34e11617.chunk.css",
+  "main.js": "/movice-app/static/js/main.9822257b.chunk.js",
+  "main.js.map": "/movice-app/static/js/main.9822257b.chunk.js.map",
+  "static/js/1.71c8c32a.chunk.js": "/movice-app/static/js/1.71c8c32a.chunk.js",
+  "static/js/1.71c8c32a.chunk.js.map": "/movice-app/static/js/1.71c8c32a.chunk.js.map",
   "runtime~main.js": "/movice-app/static/js/runtime~main.d0a92258.js",
   "runtime~main.js.map": "/movice-app/static/js/runtime~main.d0a92258.js.map",
-  "static/css/main.2108a130.chunk.css.map": "/movice-app/static/css/main.2108a130.chunk.css.map",
+  "static/css/main.34e11617.chunk.css.map": "/movice-app/static/css/main.34e11617.chunk.css.map",
   "index.html": "/movice-app/index.html",
-  "precache-manifest.5919c8fb78d70ff794ee41d4a8affb5f.js": "/movice-app/precache-manifest.5919c8fb78d70ff794ee41d4a8affb5f.js",
+  "precache-manifest.b9707132acbb23a4aa807263de153ea8.js": "/movice-app/precache-manifest.b9707132acbb23a4aa807263de153ea8.js",
   "service-worker.js": "/movice-app/service-worker.js"
 }

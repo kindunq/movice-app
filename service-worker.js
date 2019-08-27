@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/movice-app/precache-manifest.5919c8fb78d70ff794ee41d4a8affb5f.js"
+  "/movice-app/precache-manifest.b9707132acbb23a4aa807263de153ea8.js"
 );
 
 workbox.clientsClaim();
