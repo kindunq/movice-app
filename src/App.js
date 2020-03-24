@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./App.css";
-import Movie from "./Movie";
+import React, { Component } from 'react';
+import './App.css';
+import Movie from './Movie';
 
 class App extends Component {
 	// Render : componentWillMount() -> render() -> componentDidMount()
@@ -13,8 +13,7 @@ class App extends Component {
 	}
 
 	_renderMovies = () => {
-		const movies = this.state.movies.map((movie) => {
-			console.log(movie);
+		const movies = this.state.movies.map(movie => {
 			return (
 				<Movie
 					title={movie.title_english}
@@ -33,22 +32,22 @@ class App extends Component {
 	_getMovies = async () => {
 		const movies = await this._callApi();
 		this.setState({
-			movies,
+			movies
 		});
 	};
 
 	_callApi = () => {
-		return fetch("https://yts.lt/api/v2/list_movies.json?sort_by=rating")
-			.then((response) => response.json())
-			.then((json) => json.data.movies)
-			.catch((err) => console.log(err));
+		return fetch('https://yts-proxy.now.sh/list_movies.json?sort_by=rating')
+			.then(response => response.json())
+			.then(json => json.data.movies)
+			.catch(err => console.log(err));
 	};
 
 	render() {
 		const { movies } = this.state;
 		return (
-			<div className={movies ? "App" : "App--loading"}>
-				{this.state.movies ? this._renderMovies() : "Loading"}
+			<div className={movies ? 'App' : 'App--loading'}>
+				{this.state.movies ? this._renderMovies() : 'Loading'}
 			</div>
 		);
 	}
